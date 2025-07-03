@@ -1,0 +1,61 @@
+@startuml
+title Diagrama de Casos de Uso - Sistema de Controle Financeiro (Vertical)
+left to right direction
+
+actor Usuario
+
+package "Gestão de Acesso" {
+  (Cadastrar-se) as UC01
+  (Fazer login) as UC02
+}
+
+package "Receitas" {
+  (Registrar receita) as UC03
+  (Informar data da receita) as UC04
+  (Editar receita) as UC05
+  (Excluir receita) as UC06
+}
+
+package "Despesas" {
+  (Registrar gasto) as UC07
+  (Informar data do gasto) as UC08
+  (Escolher categoria do gasto) as UC09
+  (Editar gasto) as UC10
+  (Excluir gasto) as UC11
+}
+
+package "Categorias" {
+  (Criar nova categoria) as UC12
+  (Editar nome de categoria) as UC13
+  (Excluir categoria) as UC14
+}
+
+package "Relatórios e Análises" {
+  (Visualizar total gasto e recebido) as UC15
+  (Visualizar gráfico por categoria) as UC16
+  (Visualizar gráfico semanal) as UC17
+  (Visualizar gráfico mensal) as UC18
+  (Visualizar gráfico anual) as UC19
+}
+
+Usuario --> UC01
+Usuario --> UC02
+Usuario --> UC03
+Usuario --> UC04
+Usuario --> UC05
+Usuario --> UC06
+Usuario --> UC07
+Usuario --> UC08
+Usuario --> UC09
+Usuario --> UC10
+Usuario --> UC11
+Usuario --> UC12
+Usuario --> UC13
+Usuario --> UC14
+Usuario --> UC15
+Usuario --> UC16
+Usuario --> UC17
+Usuario --> UC18
+Usuario --> UC19
+
+@enduml
