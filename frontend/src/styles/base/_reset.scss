@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+button,
+input,
+a {
+  font-family: "Nunito", sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+  
+  &:hover,
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+}
+
+a:visited {
+  color: inherit;
+}
